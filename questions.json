@@ -1,0 +1,123 @@
+[
+  {
+    "question": "Define a function in Python that returns a + b",
+    "answer_divs": 2,
+    "answers": [
+      "def add(a, b):",
+      "function add(a ,b):",
+      "return a + b;",
+      "return a + b",
+      "returns (a ,b)"
+    ],
+    "correct_order": [0, 3]
+  },
+  {
+    "question": "Write a Python function that returns the square of a number n",
+    "answer_divs": 2,
+    "answers": [
+      "def square(n):",
+      "function square(n):",
+      "return n * n",
+      "return n ^ 2",
+      "print(n ** 2)"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Write a function that returns the length of a string s",
+    "answer_divs": 2,
+    "answers": [
+      "def length(s):",
+      "def len_str(s):",
+      "return len(s)",
+      "print(len(s))",
+      "return s.length()"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Create a Python function that converts Celsius to Fahrenheit",
+    "answer_divs": 2,
+    "answers": [
+      "def c_to_f(c):",
+      "def temp(c):",
+      "return (c * 9/5) + 32",
+      "return c * 32",
+      "print(c + 32)"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Define a Python function that returns the sum of all elements in a list lst",
+    "answer_divs": 2,
+    "answers": [
+      "def list_sum(lst):",
+      "function list_sum(lst):",
+      "return sum(lst)",
+      "return lst.sum()",
+      "print(sum(lst))"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Write a Python function that reverses a string",
+    "answer_divs": 2,
+    "answers": [
+      "def reverse_str(s):",
+      "function reverse_str(s):",
+      "return s[::-1]",
+      "return reverse(s)",
+      "print(s[::-1])"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Define a function that returns True if a string is a palindrome",
+    "answer_divs": 2,
+    "answers": [
+      "def is_palindrome(s):",
+      "def palindrome(s):",
+      "return s == s[::-1]",
+      "return s = s[::-1]",
+      "print(s == s[::-1])"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Write a Python function that returns the cube of a number n",
+    "answer_divs": 2,
+    "answers": [
+      "def cube(n):",
+      "function cube(n):",
+      "return n ** 3",
+      "return n * 3",
+      "print(n ** 3)"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Create a function that returns the first element of a list",
+    "answer_divs": 2,
+    "answers": [
+      "def first_item(lst):",
+      "def first(lst):",
+      "return lst[0]",
+      "return lst[-1]",
+      "print(lst[0])"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Define a Python function that returns the absolute value of x",
+    "answer_divs": 2,
+    "answers": [
+      "def absolute(x):",
+      "def abs_val(x):",
+      "return abs(x)",
+      "print(abs(x))",
+      "return x.abs()"
+    ],
+    "correct_order": [0, 2]
+  }
+]
+
