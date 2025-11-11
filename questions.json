@@ -1,363 +1,743 @@
-[
-  {
-    "question": "Define a function in Python that returns a + b",
-    "answer_divs": 2,
-    "answers": [
-      "def add(a, b):",
-      "function add(a ,b):",
-      "return a + b;",
-      "return a + b",
-      "returns (a ,b)"
-    ],
-    "correct_order": [0, 3]
-  },
+{
+  "easy": [
     {
-    "question": "Write a Python function that returns the sum of squares of two numbers a and b",
-    "answer_divs": 2,
-    "answers": [
-      "def sum_squares(a, b):",
-      "def squares_sum(a, b):",
-      "return a**2 + b**2",
-      "return (a + b)**2",
-      "print(a**2 + b**2)"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Define a function that returns True if a string s contains only digits",
-    "answer_divs": 2,
-    "answers": [
-      "def is_digit(s):",
-      "def all_digits(s):",
-      "return s.isdigit()",
-      "return s.isnumeric()",
-      "print(s.isdigit())"
-    ],
-    "correct_order": [0, 3]
-  },
-  {
-    "question": "Write a Python function that returns the second element of a list lst",
-    "answer_divs": 2,
-    "answers": [
-      "def second_item(lst):",
-      "def get_second(lst):",
-      "return lst[1]",
-      "return lst[0]",
-      "print(lst[1])"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Create a function that removes all whitespace from a string s",
-    "answer_divs": 2,
-    "answers": [
-      "def remove_whitespace(s):",
-      "def strip_spaces(s):",
-      "return s.replace(' ', '')",
-      "return s.strip()",
-      "print(s.replace(' ', ''))"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Write a function that returns True if a number n is a multiple of 5",
-    "answer_divs": 2,
-    "answers": [
-      "def multiple_of_5(n):",
-      "def is_multiple(n):",
-      "return n % 5 == 0",
-      "return n / 5 == 0",
-      "print(n % 5 == 0)"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Define a Python function that counts the occurrences of a value x in a list lst",
-    "answer_divs": 2,
-    "answers": [
-      "def count_occurrences(lst, x):",
-      "def count_x(lst, x):",
-      "return lst.count(x)",
-      "return len([i for i in lst if i == x])",
-      "print(lst.count(x))"
-    ],
-    "correct_order": [0, 3]
-  },
-  {
-    "question": "Write a function that returns the sum of all even numbers in a list lst",
-    "answer_divs": 2,
-    "answers": [
-      "def sum_evens(lst):",
-      "def even_sum(lst):",
-      "return sum(x for x in lst if x % 2 == 0)",
-      "return sum(lst[::2])",
-      "print(sum(x for x in lst if x % 2 == 0))"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Define a function that returns True if a string s starts with a capital letter",
-    "answer_divs": 2,
-    "answers": [
-      "def starts_cap(s):",
-      "def is_capital(s):",
-      "return s[0].isupper()",
-      "return s[0].istitle()",
-      "print(s[0].isupper())"
-    ],
-    "correct_order": [0, 3]
-  },
-  {
-    "question": "Write a Python function that concatenates two strings s1 and s2",
-    "answer_divs": 2,
-    "answers": [
-      "def concat(s1, s2):",
-      "def join_strings(s1, s2):",
-      "return s1 + s2",
-      "return s1.append(s2)",
-      "print(s1 + s2)"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Define a function that returns the remainder of n divided by m",
-    "answer_divs": 2,
-    "answers": [
-      "def remainder(n, m):",
-      "def mod(n, m):",
-      "return n % m",
-      "return n / m",
-      "print(n % m)"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Write a Python function that returns the square of a number n",
-    "answer_divs": 2,
-    "answers": [
-      "def square(n):",
-      "function square(n):",
-      "return n * n",
-      "return n ^ 2",
-      "print(n ** 2)"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Write a function that returns the length of a string s",
-    "answer_divs": 2,
-    "answers": [
-      "def length(s):",
-      "def len_str(s):",
-      "return len(s)",
-      "print(len(s))",
-      "return s.length()"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Create a Python function that converts Celsius to Fahrenheit",
-    "answer_divs": 2,
-    "answers": [
-      "def c_to_f(c):",
-      "def temp(c):",
-      "return (c * 9/5) + 32",
-      "return c * 32",
-      "print(c + 32)"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Define a Python function that returns the sum of all elements in a list lst",
-    "answer_divs": 2,
-    "answers": [
-      "def list_sum(lst):",
-      "function list_sum(lst):",
-      "return sum(lst)",
-      "return lst.sum()",
-      "print(sum(lst))"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Write a Python function that reverses a string",
-    "answer_divs": 2,
-    "answers": [
-      "def reverse_str(s):",
-      "function reverse_str(s):",
-      "return s[::-1]",
-      "return reverse(s)",
-      "print(s[::-1])"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Define a function that returns True if a string is a palindrome",
-    "answer_divs": 2,
-    "answers": [
-      "def is_palindrome(s):",
-      "def palindrome(s):",
-      "return s == s[::-1]",
-      "return s = s[::-1]",
-      "print(s == s[::-1])"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Write a Python function that returns the cube of a number n",
-    "answer_divs": 2,
-    "answers": [
-      "def cube(n):",
-      "function cube(n):",
-      "return n ** 3",
-      "return n * 3",
-      "print(n ** 3)"
-    ],
-    "correct_order": [0, 2]
-  },
-   {
-    "question": "Define a Python function that returns the product of two numbers a and b",
-    "answer_divs": 2,
-    "answers": [
-      "def multiply(a, b):",
-      "def product(a, b):",
-      "return a * b",
-      "return a ** b",
-      "print(a * b)"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Write a Python function that checks if a number n is even",
-    "answer_divs": 2,
-    "answers": [
-      "def is_even(n):",
-      "def check_even(n):",
-      "return n % 2 == 0",
-      "return n / 2 == 0",
-      "print(n % 2 == 0)"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Create a Python function that returns the factorial of n",
-    "answer_divs": 2,
-    "answers": [
-      "def factorial(n):",
-      "def fact(n):",
-      "if n == 0: return 1",
-      "return n * factorial(n-1)",
-      "print(factorial(n))"
-    ],
-    "correct_order": [0, 3]
-  },
-  {
-    "question": "Define a Python function that returns the maximum of two numbers a and b",
-    "answer_divs": 2,
-    "answers": [
-      "def maximum(a, b):",
-      "def max_num(a, b):",
-      "return a if a > b else b",
-      "return max(a, b)",
-      "print(max(a, b))"
-    ],
-    "correct_order": [0, 3]
-  },
-  {
-    "question": "Write a Python function that returns the reverse of a list lst",
-    "answer_divs": 2,
-    "answers": [
-      "def reverse_list(lst):",
-      "def rev_list(lst):",
-      "return lst[::-1]",
-      "return reversed(lst)",
-      "print(lst[::-1])"
-    ],
-    "correct_order": [1, 2]
-  },
-   {
-    "question": "Create a function that returns the square root of a number n",
-    "answer_divs": 2,
-    "answers": [
-      "def sqrt_num(n):",
-      "def square_root(n):",
-      "return n ** 0.5",
-      "return n * 0.5",
-      "print(n ** 0.5)"
-    ],
-    "correct_order": [2, 0]
-  },
-  {
-    "question": "Write a Python function that counts the number of vowels in a string s",
-    "answer_divs": 2,
-    "answers": [
-      "def count_vowels(s):",
-      "def vowels(s):",
-      "return sum(1 for ch in s if ch.lower() in 'aeiou')",
-      "return len(s)",
-      "print(count_vowels(s))"
-    ],
-    "correct_order": [1, 2]
-  },
-  {
-    "question": "Define a function that checks if a number is positive",
-    "answer_divs": 2,
-    "answers": [
-      "def is_positive(n):",
-      "def positive(n):",
-      "return n > 0",
-      "return n >= 0",
-      "print(n > 0)"
-    ],
-    "correct_order": [3, 0]
-  },
-  {
-    "question": "Write a Python function that returns the largest element in a list",
-    "answer_divs": 2,
-    "answers": [
-      "def largest(lst):",
-      "def max_element(lst):",
-      "return max(lst)",
-      "return lst[-1]",
-      "print(max(lst))"
-    ],
-    "correct_order": [2, 1]
-  },
-  {
-    "question": "Define a function that joins a list of strings into one string separated by spaces",
-    "answer_divs": 2,
-    "answers": [
-      "def join_strings(lst):",
-      "def combine(lst):",
-      "return ' '.join(lst)",
-      "return lst.join(' ')",
-      "print(' '.join(lst))"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Create a function that returns the first element of a list",
-    "answer_divs": 2,
-    "answers": [
-      "def first_item(lst):",
-      "def first(lst):",
-      "return lst[0]",
-      "return lst[-1]",
-      "print(lst[0])"
-    ],
-    "correct_order": [0, 2]
-  },
-  {
-    "question": "Define a Python function that returns the absolute value of x",
-    "answer_divs": 2,
-    "answers": [
-      "def absolute(x):",
-      "def abs_val(x):",
-      "return abs(x)",
-      "print(abs(x))",
-      "return x.abs()"
-    ],
-    "correct_order": [0, 2]
-  }
-]
-
+      "question": "Define a function in Python that returns a + b",
+      "answer_divs": 2,
+      "answers": ["def add(a, b):", "function add(a ,b):", "return a + b;", "return a + b", "returns (a ,b)"],
+      "correct_order": [0, 3]
+    },
+    {
+      "question": "Write a Python function that returns the sum of squares of two numbers a and b",
+      "answer_divs": 2,
+      "answers": ["def sum_squares(a, b):", "def squares_sum(a, b):", "return a**2 + b**2", "return (a + b)**2", "print(a**2 + b**2)"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Define a function that returns True if a string s contains only digits",
+      "answer_divs": 2,
+      "answers": ["def is_digit(s):", "def all_digits(s):", "return s.isdigit()", "return s.isnumeric()", "print(s.isdigit())"],
+      "correct_order": [0, 3]
+    },
+    {
+      "question": "Write a Python function that returns the second element of a list lst",
+      "answer_divs": 2,
+      "answers": ["def second_item(lst):", "def get_second(lst):", "return lst[1]", "return lst[0]", "print(lst[1])"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Create a function that removes all whitespace from a string s",
+      "answer_divs": 2,
+      "answers": ["def remove_whitespace(s):", "def strip_spaces(s):", "return s.replace(' ', '')", "return s.strip()", "print(s.replace(' ', ''))"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Write a function that returns True if a number n is a multiple of 5",
+      "answer_divs": 2,
+      "answers": ["def multiple_of_5(n):", "def is_multiple(n):", "return n % 5 == 0", "return n / 5 == 0", "print(n % 5 == 0)"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Define a Python function that counts the occurrences of a value x in a list lst",
+      "answer_divs": 2,
+      "answers": ["def count_occurrences(lst, x):", "def count_x(lst, x):", "return lst.count(x)", "return len([i for i in lst if i == x])", "print(lst.count(x))"],
+      "correct_order": [0, 3]
+    },
+    {
+      "question": "Write a function that returns the sum of all even numbers in a list lst",
+      "answer_divs": 2,
+      "answers": ["def sum_evens(lst):", "def even_sum(lst):", "return sum(x for x in lst if x % 2 == 0)", "return sum(lst[::2])", "print(sum(x for x in lst if x % 2 == 0))"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Define a function that returns True if a string s starts with a capital letter",
+      "answer_divs": 2,
+      "answers": ["def starts_cap(s):", "def is_capital(s):", "return s[0].isupper()", "return s[0].istitle()", "print(s[0].isupper())"],
+      "correct_order": [0, 3]
+    },
+    {
+      "question": "Write a Python function that concatenates two strings s1 and s2",
+      "answer_divs": 2,
+      "answers": ["def concat(s1, s2):", "def join_strings(s1, s2):", "return s1 + s2", "return s1.append(s2)", "print(s1 + s2)"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Define a function that returns the remainder of n divided by m",
+      "answer_divs": 2,
+      "answers": ["def remainder(n, m):", "def mod(n, m):", "return n % m", "return n / m", "print(n % m)"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Write a Python function that returns the square of a number n",
+      "answer_divs": 2,
+      "answers": ["def square(n):", "function square(n):", "return n * n", "return n ^ 2", "print(n ** 2)"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Write a function that returns the length of a string s",
+      "answer_divs": 2,
+      "answers": ["def length(s):", "def len_str(s):", "return len(s)", "print(len(s))", "return s.length()"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Create a Python function that converts Celsius to Fahrenheit",
+      "answer_divs": 2,
+      "answers": ["def c_to_f(c):", "def temp(c):", "return (c * 9/5) + 32", "return c * 32", "print(c + 32)"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Define a Python function that returns the sum of all elements in a list lst",
+      "answer_divs": 2,
+      "answers": ["def list_sum(lst):", "function list_sum(lst):", "return sum(lst)", "return lst.sum()", "print(sum(lst))"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Write a Python function that reverses a string",
+      "answer_divs": 2,
+      "answers": ["def reverse_str(s):", "function reverse_str(s):", "return s[::-1]", "return reverse(s)", "print(s[::-1])"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Define a function that returns True if a string is a palindrome",
+      "answer_divs": 2,
+      "answers": ["def is_palindrome(s):", "def palindrome(s):", "return s == s[::-1]", "return s = s[::-1]", "print(s == s[::-1])"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Write a Python function that returns the cube of a number n",
+      "answer_divs": 2,
+      "answers": ["def cube(n):", "function cube(n):", "return n ** 3", "return n * 3", "print(n ** 3)"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Define a Python function that returns the product of two numbers a and b",
+      "answer_divs": 2,
+      "answers": ["def multiply(a, b):", "def product(a, b):", "return a * b", "return a ** b", "print(a * b)"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Write a Python function that checks if a number n is even",
+      "answer_divs": 2,
+      "answers": ["def is_even(n):", "def check_even(n):", "return n % 2 == 0", "return n / 2 == 0", "print(n % 2 == 0)"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Create a Python function that returns the factorial of n",
+      "answer_divs": 2,
+      "answers": ["def factorial(n):", "def fact(n):", "if n == 0: return 1", "return n * factorial(n-1)", "print(factorial(n))"],
+      "correct_order": [0, 3]
+    },
+    {
+      "question": "Define a Python function that returns the maximum of two numbers a and b",
+      "answer_divs": 2,
+      "answers": ["def maximum(a, b):", "def max_num(a, b):", "return a if a > b else b", "return max(a, b)", "print(max(a, b))"],
+      "correct_order": [0, 3]
+    },
+    {
+      "question": "Write a Python function that returns the reverse of a list lst",
+      "answer_divs": 2,
+      "answers": ["def reverse_list(lst):", "def rev_list(lst):", "return lst[::-1]", "return reversed(lst)", "print(lst[::-1])"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Create a function that returns the square root of a number n",
+      "answer_divs": 2,
+      "answers": ["def sqrt_num(n):", "def square_root(n):", "return n ** 0.5", "return n * 0.5", "print(n ** 0.5)"],
+      "correct_order": [2, 0]
+    },
+    {
+      "question": "Write a Python function that counts the number of vowels in a string s",
+      "answer_divs": 2,
+      "answers": ["def count_vowels(s):", "def vowels(s):", "return sum(1 for ch in s if ch.lower() in 'aeiou')", "return len(s)", "print(count_vowels(s))"],
+      "correct_order": [1, 2]
+    },
+    {
+      "question": "Define a function that checks if a number is positive",
+      "answer_divs": 2,
+      "answers": ["def is_positive(n):", "def positive(n):", "return n > 0", "return n >= 0", "print(n > 0)"],
+      "correct_order": [3, 0]
+    },
+    {
+      "question": "Write a Python function that returns the largest element in a list",
+      "answer_divs": 2,
+      "answers": ["def largest(lst):", "def max_element(lst):", "return max(lst)", "return lst[-1]", "print(max(lst))"],
+      "correct_order": [2, 1]
+    },
+    {
+      "question": "Define a function that joins a list of strings into one string separated by spaces",
+      "answer_divs": 2,
+      "answers": ["def join_strings(lst):", "def combine(lst):", "return ' '.join(lst)", "return lst.join(' ')", "print(' '.join(lst))"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Create a function that returns the first element of a list",
+      "answer_divs": 2,
+      "answers": ["def first_item(lst):", "def first(lst):", "return lst[0]", "return lst[-1]", "print(lst[0])"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Define a Python function that returns the absolute value of x",
+      "answer_divs": 2,
+      "answers": ["def absolute(x):", "def abs_val(x):", "return abs(x)", "print(abs(x))", "return x.abs()"],
+      "correct_order": [0, 2]
+    },
+    {
+      "question": "Print 'Hello, World!'",
+      "answer_divs": 1,
+      "answers": ["print('Hello, World!')", "echo 'Hello'", "console.log('Hello')", "print \"Hello\""],
+      "correct_order": [0]
+    },
+    {
+      "question": "Assign 42 to variable x",
+      "answer_divs": 1,
+      "answers": ["x = 42", "let x = 42", "x := 42", "int x = 42"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Add two numbers a and b",
+      "answer_divs": 1,
+      "answers": ["a + b", "a - b", "a * b", "a / b"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Create a list of fruits",
+      "answer_divs": 1,
+      "answers": ["fruits = ['apple', 'banana']", "fruits = {apple, banana}", "fruits = (apple, banana)", "fruits = apple banana"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Loop from 0 to 4 and print i",
+      "answer_divs": 5,
+      "answers": ["for", "i", "in", "range(5):", "print(i)", "while i < 5:"],
+      "correct_order": [0, 1, 2, 3, 4]
+    },
+    {
+      "question": "Check if x is greater than 10",
+      "answer_divs": 1,
+      "answers": ["if x > 10:", "if x >= 10:", "if x < 10:", "else:"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Define a function greet(name)",
+      "answer_divs": 2,
+      "answers": ["def greet(name):", "function greet(name)", "print('Hi', name)", "return 'Hi ' + name"],
+      "correct_order": [0, 3]
+    },
+    {
+      "question": "Import the math module",
+      "answer_divs": 1,
+      "answers": ["import math", "#include <math>", "using math", "from math import *"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Get length of a list",
+      "answer_divs": 1,
+      "answers": ["len(my_list)", "my_list.length", "size(my_list)", "my_list.count"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Create a string variable",
+      "answer_divs": 1,
+      "answers": ["name = \"Alice\"", "name = 'Alice'", "name = Alice", "name := \"Alice\""],
+      "correct_order": [0]
+    },
+    {
+      "question": "Multiply two numbers",
+      "answer_divs": 1,
+      "answers": ["x * y", "x + y", "x ** y", "x / y"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Comment: This is a comment",
+      "answer_divs": 1,
+      "answers": ["# This is a comment", "// This is a comment", "/* comment */", "<!-- comment -->"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Create an empty list",
+      "answer_divs": 1,
+      "answers": ["my_list = []", "my_list = {}", "my_list = ()", "my_list = list()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Access first item in list",
+      "answer_divs": 1,
+      "answers": ["my_list[0]", "my_list(0)", "my_list.first", "my_list[1]"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Check if item in list",
+      "answer_divs": 1,
+      "answers": ["if item in my_list:", "if my_list.contains(item):", "if item == my_list:", "if item:"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Convert string to integer",
+      "answer_divs": 1,
+      "answers": ["int('5')", "parseInt('5')", "Integer('5')", "str(5)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Round a float to 2 decimals",
+      "answer_divs": 1,
+      "answers": ["round(3.14159, 2)", "round(3.14159)", "Math.round(3.14159, 2)", "3.14159.toFixed(2)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Create a tuple",
+      "answer_divs": 1,
+      "answers": ["coords = (10, 20)", "coords = [10, 20]", "coords = {10, 20}", "coords = 10, 20"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Use f-string to format",
+      "answer_divs": 1,
+      "answers": ["f'Hello {name}'", "'Hello ' + name", "f'Hello name'", "'Hello {}'.format(name)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Define a function with default param",
+      "answer_divs": 2,
+      "answers": ["def greet(name='Guest'):", "print(f'Hi {name}')", "def greet(name):", "return name"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Exit loop early",
+      "answer_divs": 1,
+      "answers": ["break", "continue", "return", "exit"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Skip current iteration",
+      "answer_divs": 1,
+      "answers": ["continue", "break", "pass", "skip"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Create a set",
+      "answer_divs": 1,
+      "answers": ["unique = {1, 2, 3}", "unique = [1, 2, 3]", "unique = (1, 2, 3)", "unique = set(1,2,3)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Get input from user",
+      "answer_divs": 1,
+      "answers": ["input('Enter: ')", "readline()", "prompt()", "scanf()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Open a file for reading",
+      "answer_divs": 2,
+      "answers": ["with open('file.txt', 'r') as f:", "f.read()", "open('file.txt')", "file.read()"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Append to a list",
+      "answer_divs": 1,
+      "answers": ["my_list.append(5)", "my_list.add(5)", "my_list.push(5)", "my_list += 5"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Remove item from list",
+      "answer_divs": 1,
+      "answers": ["my_list.remove('x')", "my_list.delete('x')", "del my_list['x']", "my_list.pop('x')"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Sort a list",
+      "answer_divs": 1,
+      "answers": ["my_list.sort()", "sorted(my_list)", "my_list.order()", "my_list.reverse()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Join list into string",
+      "answer_divs": 1,
+      "answers": ["', '.join(my_list)", "my_list.join(', ')", "str.join(my_list)", "my_list.concat()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Check if string starts with 'py'",
+      "answer_divs": 1,
+      "answers": ["s.startswith('py')", "s.begins('py')", "s[0:2] == 'py'", "s.starts('py')"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Replace 'cat' with 'dog'",
+      "answer_divs": 1,
+      "answers": ["s.replace('cat', 'dog')", "s.sub('cat', 'dog')", "s.change('cat', 'dog')", "s.swap('cat', 'dog')"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Convert to uppercase",
+      "answer_divs": 1,
+      "answers": ["s.upper()", "s.toUpperCase()", "s.capitalize()", "s.UPPER()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Split string by space",
+      "answer_divs": 1,
+      "answers": ["s.split()", "s.split(' ')", "s.divide()", "s.explode()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Define a class Person",
+      "answer_divs": 1,
+      "answers": ["class Person:", "struct Person", "type Person", "Person = class"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Create an instance",
+      "answer_divs": 1,
+      "answers": ["p = Person()", "p = new Person()", "p = Person.new", "p = Person[]"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Define __init__ method",
+      "answer_divs": 2,
+      "answers": ["def __init__(self, name):", "self.name = name", "constructor(name)", "init(name)"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Call a method",
+      "answer_divs": 1,
+      "answers": ["p.greet()", "p->greet()", "greet(p)", "Person.greet()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Inherit from Animal",
+      "answer_divs": 1,
+      "answers": ["class Dog(Animal):", "class Dog extends Animal", "class Dog inherits Animal", "class Dog: Animal"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Use super() to call parent",
+      "answer_divs": 1,
+      "answers": ["super().__init__()", "parent.__init__()", "base()", "this.super()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Raise an exception",
+      "answer_divs": 1,
+      "answers": ["raise ValueError('Invalid')", "throw new Error()", "error('Invalid')", "assert false"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Try-except block",
+      "answer_divs": 2,
+      "answers": ["try:", "except:", "finally:", "catch:"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Import random module",
+      "answer_divs": 1,
+      "answers": ["import random", "include <random>", "using random", "from random import"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Generate random integer 1–10",
+      "answer_divs": 1,
+      "answers": ["random.randint(1, 10)", "random.int(1,10)", "Math.random(1,10)", "rand(1,10)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Sleep for 2 seconds",
+      "answer_divs": 1,
+      "answers": ["time.sleep(2)", "sleep(2)", "wait(2)", "delay(2)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Get current time",
+      "answer_divs": 1,
+      "answers": ["datetime.now()", "Date.now()", "time()", "now()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Format date as string",
+      "answer_divs": 1,
+      "answers": ["now.strftime('%Y-%m-%d')", "now.format('YYYY-MM-DD')", "now.toString()", "now.date()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Read JSON file",
+      "answer_divs": 2,
+      "answers": ["with open('data.json') as f:", "json.load(f)", "json.parse(f)", "load(f)"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Write to JSON file",
+      "answer_divs": 2,
+      "answers": ["with open('out.json', 'w') as f:", "json.dump(data, f)", "json.write(f, data)", "f.json(data)"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Check if key in dict",
+      "answer_divs": 1,
+      "answers": ["if 'key' in my_dict:", "if my_dict.has('key'):", "if my_dict.key:", "if key in my_dict.keys()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Get value with default",
+      "answer_divs": 1,
+      "answers": ["my_dict.get('key', 0)", "my_dict['key'] or 0", "my_dict.default('key', 0)", "my_dict.key || 0"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Loop over dict keys",
+      "answer_divs": 2,
+      "answers": ["for key in my_dict:", "print(key)", "for key in my_dict.keys():", "for key in my_dict.items():"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Loop over key-value pairs",
+      "answer_divs": 2,
+      "answers": ["for k, v in my_dict.items():", "print(k, v)", "for k in my_dict:", "print(my_dict[k])"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Create a dictionary",
+      "answer_divs": 1,
+      "answers": ["person = {'name': 'Ali', 'age': 25}", "person = [name: 'Ali', age: 25]", "person = (name='Ali', age=25)", "person = dict(name='Ali', age=25)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Update dict value",
+      "answer_divs": 1,
+      "answers": ["my_dict['score'] = 100", "my_dict.score = 100", "my_dict.set('score', 100)", "update my_dict score=100"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Delete key from dict",
+      "answer_divs": 1,
+      "answers": ["del my_dict['temp']", "my_dict.remove('temp')", "my_dict.pop('temp')", "delete my_dict.temp"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Copy a list",
+      "answer_divs": 1,
+      "answers": ["new_list = old_list.copy()", "new_list = old_list[:]", "new_list = list(old_list)", "new_list = old_list"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Reverse a list",
+      "answer_divs": 1,
+      "answers": ["my_list.reverse()", "my_list[::-1]", "reverse(my_list)", "my_list.sort(reverse=True)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Count occurrences",
+      "answer_divs": 1,
+      "answers": ["my_list.count('x')", "count(my_list, 'x')", "my_list.occurrences('x')", "len([i for i in my_list if i=='x'])"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Find index of item",
+      "answer_divs": 1,
+      "answers": ["my_list.index('x')", "my_list.find('x')", "indexOf('x')", "my_list.pos('x')"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Pop last item",
+      "answer_divs": 1,
+      "answers": ["my_list.pop()", "my_list.remove_last()", "my_list.shift()", "my_list.pop(0)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Insert at index 0",
+      "answer_divs": 1,
+      "answers": ["my_list.insert(0, 'first')", "my_list.add(0, 'first')", "my_list.push_front('first')", "my_list[0] = 'first'"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Slice list from 1 to 4",
+      "answer_divs": 1,
+      "answers": ["my_list[1:4]", "my_list[1..4]", "my_list.slice(1,4)", "my_list[1,2,3]"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Check if list is empty",
+      "answer_divs": 1,
+      "answers": ["if not my_list:", "if len(my_list) == 0:", "if my_list.empty():", "if my_list is None:"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Flatten a list of lists",
+      "answer_divs": 1,
+      "answers": ["[item for sub in nested for item in sub]", "nested.flat()", "flatten(nested)", "sum(nested, [])"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Map square function",
+      "answer_divs": 1,
+      "answers": ["list(map(lambda x: x*x, nums))", "nums.map(x => x*x)", "[x*x for x in nums]", "square(nums)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Filter even numbers",
+      "answer_divs": 1,
+      "answers": ["list(filter(lambda x: x%2==0, nums))", "nums.filter(x => x%2==0)", "[x for x in nums if x%2==0]", "even(nums)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Reduce to sum",
+      "answer_divs": 2,
+      "answers": ["from functools import reduce", "reduce(lambda a,b: a+b, nums)", "nums.reduce((a,b)=>a+b)", "sum(nums)"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Zip two lists",
+      "answer_divs": 1,
+      "answers": ["list(zip(a, b))", "a.zip(b)", "zip(a,b)", "combine(a,b)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Enumerate with index",
+      "answer_divs": 2,
+      "answers": ["for i, val in enumerate(my_list):", "print(i, val)", "for i in range(len(my_list)):", "my_list.each_with_index"],
+      "correct_order": [0, 1]
+    },
+    {
+      "question": "Any item True?",
+      "answer_divs": 1,
+      "answers": ["any(my_list)", "my_list.any()", "some(my_list)", "my_list.or()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "All items True?",
+      "answer_divs": 1,
+      "answers": ["all(my_list)", "my_list.all()", "every(my_list)", "my_list.and()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Max value in list",
+      "answer_divs": 1,
+      "answers": ["max(my_list)", "my_list.max()", "Math.max(my_list)", "largest(my_list)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Min value in list",
+      "answer_divs": 1,
+      "answers": ["min(my_list)", "my_list.min()", "Math.min(my_list)", "smallest(my_list)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Sum all numbers",
+      "answer_divs": 1,
+      "answers": ["sum(my_list)", "my_list.sum()", "total(my_list)", "add_all(my_list)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Range from 0 to 9",
+      "answer_divs": 1,
+      "answers": ["range(10)", "range(0,10)", "0..9", "list(range(10))"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Range from 5 to 15 step 2",
+      "answer_divs": 1,
+      "answers": ["range(5, 16, 2)", "range(5,15,2)", "5:15:2", "range(5,16,2)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "List comprehension: even nums",
+      "answer_divs": 1,
+      "answers": ["[x for x in range(10) if x%2==0]", "even = [] for x in range(10): if x%2==0: even.append(x)", "filter even", "map even"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Lambda function for double",
+      "answer_divs": 1,
+      "answers": ["lambda x: x*2", "def double(x): return x*2", "x => x*2", "double = x*2"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Sort list by length",
+      "answer_divs": 1,
+      "answers": ["sorted(words, key=len)", "words.sort(key=len)", "words.order_by(len)", "sort(words, len)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Reverse a string",
+      "answer_divs": 1,
+      "answers": ["s[::-1]", "reverse(s)", "s.reverse()", "strrev(s)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Strip whitespace",
+      "answer_divs": 1,
+      "answers": ["s.strip()", "s.trim()", "trim(s)", "s.lstrip().rstrip()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Check if palindrome",
+      "answer_divs": 1,
+      "answers": ["s == s[::-1]", "is_palindrome(s)", "s.equals(reverse(s))", "palindrome_check(s)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Title case string",
+      "answer_divs": 1,
+      "answers": ["s.title()", "s.capitalize()", "title(s)", "s.upper_first()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Find substring",
+      "answer_divs": 1,
+      "answers": ["s.find('py')", "s.indexOf('py')", "s.search('py')", "locate('py', s)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Count substring",
+      "answer_divs": 1,
+      "answers": ["s.count('a')", "count(s, 'a')", "s.occurrences('a')", "freq(s, 'a')"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Pad string with zeros",
+      "answer_divs": 1,
+      "answers": ["num_str.zfill(5)", "pad(num_str, 5, '0')", "num_str.padStart(5,'0')", "str_pad(num_str,5,0)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Encode to bytes",
+      "answer_divs": 1,
+      "answers": ["s.encode('utf-8')", "bytes(s)", "s.to_bytes()", "encode(s)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Decode bytes to string",
+      "answer_divs": 1,
+      "answers": ["b.decode('utf-8')", "str(b)", "b.to_string()", "decode(b)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Check if digit",
+      "answer_divs": 1,
+      "answers": ["s.isdigit()", "is_number(s)", "s.isNumeric()", "digit_check(s)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Check if alphabetic",
+      "answer_divs": 1,
+      "answers": ["s.isalpha()", "is_letter(s)", "s.isAlphabetic()", "alpha_check(s)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Check if alphanumeric",
+      "answer_divs": 1,
+      "answers": ["s.isalnum()", "is_alphanum(s)", "s.isAlphaNumeric()", "alnum_check(s)"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Lowercase string",
+      "answer_divs": 1,
+      "answers": ["s.lower()", "s.toLowerCase()", "lowercase(s)", "s.downcase()"],
+      "correct_order": [0]
+    },
+    {
+      "question": "Capitalize first letter",
+      "answer_divs": 1,
+      "answers": ["s.capitalize()", "s.title()", "cap(s)", "s.upper_first()"],
+      "correct_order": [0]
+    }
+  ],
+  "medium": []
+}
