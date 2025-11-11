@@ -11,6 +11,126 @@
     ],
     "correct_order": [0, 3]
   },
+    {
+    "question": "Write a Python function that returns the sum of squares of two numbers a and b",
+    "answer_divs": 2,
+    "answers": [
+      "def sum_squares(a, b):",
+      "def squares_sum(a, b):",
+      "return a**2 + b**2",
+      "return (a + b)**2",
+      "print(a**2 + b**2)"
+    ],
+    "correct_order": [1, 2]
+  },
+  {
+    "question": "Define a function that returns True if a string s contains only digits",
+    "answer_divs": 2,
+    "answers": [
+      "def is_digit(s):",
+      "def all_digits(s):",
+      "return s.isdigit()",
+      "return s.isnumeric()",
+      "print(s.isdigit())"
+    ],
+    "correct_order": [0, 3]
+  },
+  {
+    "question": "Write a Python function that returns the second element of a list lst",
+    "answer_divs": 2,
+    "answers": [
+      "def second_item(lst):",
+      "def get_second(lst):",
+      "return lst[1]",
+      "return lst[0]",
+      "print(lst[1])"
+    ],
+    "correct_order": [1, 2]
+  },
+  {
+    "question": "Create a function that removes all whitespace from a string s",
+    "answer_divs": 2,
+    "answers": [
+      "def remove_whitespace(s):",
+      "def strip_spaces(s):",
+      "return s.replace(' ', '')",
+      "return s.strip()",
+      "print(s.replace(' ', ''))"
+    ],
+    "correct_order": [0, 2]
+  },
+  {
+    "question": "Write a function that returns True if a number n is a multiple of 5",
+    "answer_divs": 2,
+    "answers": [
+      "def multiple_of_5(n):",
+      "def is_multiple(n):",
+      "return n % 5 == 0",
+      "return n / 5 == 0",
+      "print(n % 5 == 0)"
+    ],
+    "correct_order": [1, 2]
+  },
+  {
+    "question": "Define a Python function that counts the occurrences of a value x in a list lst",
+    "answer_divs": 2,
+    "answers": [
+      "def count_occurrences(lst, x):",
+      "def count_x(lst, x):",
+      "return lst.count(x)",
+      "return len([i for i in lst if i == x])",
+      "print(lst.count(x))"
+    ],
+    "correct_order": [0, 3]
+  },
+  {
+    "question": "Write a function that returns the sum of all even numbers in a list lst",
+    "answer_divs": 2,
+    "answers": [
+      "def sum_evens(lst):",
+      "def even_sum(lst):",
+      "return sum(x for x in lst if x % 2 == 0)",
+      "return sum(lst[::2])",
+      "print(sum(x for x in lst if x % 2 == 0))"
+    ],
+    "correct_order": [1, 2]
+  },
+  {
+    "question": "Define a function that returns True if a string s starts with a capital letter",
+    "answer_divs": 2,
+    "answers": [
+      "def starts_cap(s):",
+      "def is_capital(s):",
+      "return s[0].isupper()",
+      "return s[0].istitle()",
+      "print(s[0].isupper())"
+    ],
+    "correct_order": [0, 3]
+  },
+  {
+    "question": "Write a Python function that concatenates two strings s1 and s2",
+    "answer_divs": 2,
+    "answers": [
+      "def concat(s1, s2):",
+      "def join_strings(s1, s2):",
+      "return s1 + s2",
+      "return s1.append(s2)",
+      "print(s1 + s2)"
+    ],
+    "correct_order": [1, 2]
+  },
+  {
+    "question": "Define a function that returns the remainder of n divided by m",
+    "answer_divs": 2,
+    "answers": [
+      "def remainder(n, m):",
+      "def mod(n, m):",
+      "return n % m",
+      "return n / m",
+      "print(n % m)"
+    ],
+    "correct_order": [1, 2]
+  },
   {
     "question": "Write a Python function that returns the square of a number n",
     "answer_divs": 2,
