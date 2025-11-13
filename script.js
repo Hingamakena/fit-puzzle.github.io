@@ -132,6 +132,77 @@ function checkAnswerAndProceed() {
   }
 }
 
+///////////////////////////////////////
+function customConfirm(message) {
+  return new Promise((resolve) => {
+    // Create modal elements
+    const overlay = document.createElement('div');
+    overlay.style.cssText = `
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.65);
+      display: flex; justify-content: center; align-items: center;
+      z-index: 9999;
+    `;
+
+    const box = document.createElement('div');
+    box.style.cssText = `
+      background: rgba(12,18,28,0.95);
+      padding: 20px 30px;
+      border-radius: 10px;
+      color: #14ffec;
+      text-align: center;
+      font-family: 'Fira Code', monospace;
+      box-shadow: 0 0 18px rgba(20,255,236,0.3);
+      animation: fadeIn .3s ease;
+    `;
+    box.innerHTML = `
+      <p style="margin-bottom: 14px;">${message}</p>
+      <button id="confirmYes" style="margin-right:10px; background:#14ffec; color:#0b0f19; border:none; padding:8px 16px; border-radius:6px; cursor:pointer;">Yes</button>
+      <button id="confirmNo" style="background:#ff416c; color:white; border:none; padding:8px 16px; border-radius:6px; cursor:pointer;">No</button>
+    `;
+
+    overlay.appendChild(box);
+    document.body.appendChild(overlay);
+
+    // Handle button clicks
+    box.querySelector('#confirmYes').onclick = () => {
+      document.body.removeChild(overlay);
+      resolve(true);
+    };
+    box.querySelector('#confirmNo').onclick = () => {
+      document.body.removeChild(overlay);
+      resolve(false);
+    };
+  });
+}
+
+//////////////////////////////////////
+
+////////////////////////////////////////
+
+function showGoodbyeScreen() {
+  document.body.innerHTML = `
+    <div style="
+      display:flex; flex-direction:column; justify-content:center; align-items:center;
+      height:100vh; color:#14ffec; font-family:'Fira Code', monospace;
+      background: radial-gradient(circle at 20% 20%, #0b0f19 0%, #02060f 100%);
+      text-align:center;
+    ">
+      <h2>👋 Thanks for playing!</h2>
+      <p>Come back soon!</p>
+      <button id="restartBtn" style="margin-top:16px; padding:12px 20px;
+        background:linear-gradient(90deg, #14ffec, #0d7377);
+        color:#0b0f19; border:none; border-radius:8px; cursor:pointer;">
+        Restart
+      </button>
+    </div>
+  `;
+
+  document.getElementById('restartBtn').onclick = showStartScreen;
+}
+
+///////////////////////////////////////
 function endQuiz() {
   if (!isQuizActive) return;
   isQuizActive = false; stopTimer();
@@ -146,9 +217,16 @@ function endQuiz() {
 // Events
 startBtn.addEventListener('click', startQuiz);
 retryBtn.addEventListener('click', startQuiz);
-cancelBtn.addEventListener('click', () => confirm('Restart?') && showStartScreen());
-quitBtn.addEventListener('click', () => confirm('Quit?') && window.close());
-
+cancelBtn.addEventListener('click', async () => {
+  const confirmed = await customConfirm('Restart?');
+  if (confirmed) showStartScreen();
+});
+quitBtn.addEventListener('click', async () => {
+  const confirmed = await customConfirm('Quit the game?');
+  if (confirmed) {
+    showGoodbyeScreen();
+  }
+});
 // Cursor Glow
 document.addEventListener('mousemove', e => {
   const glow = document.querySelector('.cursor-glow');
