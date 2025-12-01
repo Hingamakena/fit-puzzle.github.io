@@ -6,32 +6,37 @@
 
 html, body {
   height: 100vh;
-  height: 100dvh; /* excellent mobile support */
+  height: 100dvh; /* perfect mobile support */
   margin: 0;
-  overflow: hidden;
   font-family: 'Fira Code', monospace;
   background: radial-gradient(circle at 20% 20%, #0b0f19 0%, #02060f 100%);
   color: #d4d4d4;
   touch-action: manipulation;
-  -webkit-tap-highlight-color: transparent; /* removes tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   display: flex;
   flex-direction: column;
   padding: 8px;
-  gap: 10px;
+  gap: 12px;
   background-attachment: fixed;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-y: auto; /* THIS IS THE KEY: page can now scroll */
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Use logical properties for better RTL support (optional) */
 .container {
-  flex: 1;
   display: flex;
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
   width: 100%;
+  gap: 12px;
+  padding-bottom: 20px; /* extra breathing room at bottom */
 }
 
 .section {
@@ -61,7 +66,7 @@ body {
   margin-top: 4px;
 }
 
-/* Answer pad – only scroll when really needed */
+/* Answers pool – scrollable when too many options */
 #answer_pad {
   display: flex;
   flex-wrap: wrap;
@@ -70,9 +75,8 @@ body {
   background: rgba(12,18,28,.8);
   border: 2px dashed rgba(20,255,236,.4);
   border-radius: 10px;
-  max-height: 30vh;
+  max-height: 35vh;           /* comfortable on all screens */
   overflow-y: auto;
-  ;
   justify-content: center;
   scrollbar-width: thin;
   scrollbar-color: #14ffec #1e1e1e;
@@ -88,19 +92,20 @@ body {
   border-radius: 4px;
 }
 
-/* Drop zone – fixed height, no internal scroll */
+/* Drop zone – fixed min height, no internal gaps only */
 #question_answers {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding:  : 12px;
+  padding: 12px;
   background: rgba(12,18,28,.8);
   border: 2px dashed rgba(20,255,236,.4);
   border-radius: 10px;
   min-height: 120px;
+  flex-shrink: 0;
 }
 
-/* Code-block style answers */
+/* Code-block style draggable answers */
 .answer-block {
   padding: 14px 18px;
   background: #1e1e1e;
@@ -160,7 +165,7 @@ body {
 /* Buttons */
 button {
   padding: 12px 24px;
-  margin:  : 6px;
+  margin: 6px;
   border: none;
   border-radius: 10px;
   font-weight: 600;
